@@ -15,17 +15,10 @@ def show_scores():
     print("-----Scores from previous players-----")
     for score_dict in score_list:
         print("Player: " + score_dict['name'] + ", " + str(score_dict["attempts"]) + " attempts, wrong attempts: " + str(score_dict.get("wrong_attempts")) + ", secret number: " + str(score_dict["secret_number"]) + ", date: " + score_dict["date"])
-<<<<<<< HEAD
         
 def quit_game():
     sys.exit()
-    
-=======
 
-def quit_game():
-    sys.exit()
-
->>>>>>> e166419... fixed date and time
 def play_game():
     user_input = input("What do you want to do? Press 1 to play the game, press 2 to show top scores and press 3 to quit: ")
     if user_input == "1":
@@ -60,11 +53,7 @@ def play_game():
 
             elif guess > secret:
                 print("Your guess is not correct... try something smaller")
-<<<<<<< HEAD
-                
-=======
 
->>>>>>> e166419... fixed date and time
             elif guess < secret:
                 print("Your guess is not correct... try something bigger")
 
