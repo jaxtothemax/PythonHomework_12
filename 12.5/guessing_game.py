@@ -30,8 +30,7 @@ def play_game():
             attempts += 1
 
             if guess == secret:
-                score_list.append
-                ({
+                score_list.append({
                     "secret_number": secret, 
                     "name": name, "wrong_attempts": attempts-1, 
                     "attempts": attempts, 
