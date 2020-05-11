@@ -14,7 +14,6 @@ with open("score_list.txt", "r") as score_file:
 def show_scores():
     print("-----Scores from previous players-----")
     for score_dict in score_list:
-<<<<<<< HEAD:12.5 - Modular_Guessing_Game/guessing_game.py
         print(
             "Player: " + score_dict['name'] + ", " + str(score_dict["attempts"]) + " attempts, wrong attempts: " + str(
                 score_dict.get("wrong_attempts")) + ", secret number: " + str(
@@ -25,13 +24,6 @@ def quit_game():
     sys.exit()
 
 
-=======
-        print("Player: " + score_dict['name'] + ", " + str(score_dict["attempts"]) + " attempts, wrong attempts: " + str(score_dict.get("wrong_attempts")) + ", secret number: " + str(score_dict["secret_number"]) + ", date: " + score_dict["date"])
-        
-def quit_game():
-    sys.exit()
-
->>>>>>> temp-branch:12.5/guessing_game.py
 def play_game():
     user_input = input(
         "What do you want to do? Press 1 to play the game, press 2 to show top scores and press 3 to quit: ")
@@ -45,15 +37,9 @@ def play_game():
 
             if guess == secret:
                 score_list.append({
-<<<<<<< HEAD:12.5 - Modular_Guessing_Game/guessing_game.py
                     "secret_number": secret,
                     "name": name, "wrong_attempts": attempts - 1,
                     "attempts": attempts,
-=======
-                    "secret_number": secret, 
-                    "name": name, "wrong_attempts": attempts-1, 
-                    "attempts": attempts, 
->>>>>>> temp-branch:12.5/guessing_game.py
                     "date": date_time
                 })
 
