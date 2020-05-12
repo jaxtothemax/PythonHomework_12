@@ -8,12 +8,13 @@ def play_game():
     random_country = random.choice(list(country))
     capital_city = input(f"What is the capital city of {random_country}: ")
 
-    for key, value in country.items():
-        if capital_city == value:
-            print("That's correct!")
-            play_game()
-    else: 
-        print("That's incorrect, try again!")
-        play_game()
+    key,value = random_country,capital_city
+    if key in country and value == country[key]:
+        print("That's correct, continue!")
+    else:
+        print("That's incorrect, google it!")
 
+    play_game()
+  
+            
 play_game()
